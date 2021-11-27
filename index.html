@@ -7,25 +7,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banana speak</title>
     <style>
-        textarea{
-            width: 50%;
-            height: 10vh;
+        @import url('https://fonts.googleapis.com/css2?family=Caveat&family=EB+Garamond&family=Indie+Flower&family=Kalam:wght@300&family=Montagu+Slab:wght@300&family=Montserrat:ital,wght@0,300;0,400;1,500&family=Source+Serif+Pro:ital,wght@1,300&display=swap');
+
+        :root {
+            --primary-color: #FBBF24;
+        }
+
+        nav {
+            background-color: var(--primary-color);
+
+        }
+
+        nav div {
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        body {
+            font-family: 'Kalam', cursive;
+            font-size: large;
+            margin: 0px;
             display: block;
-            margin: 3rem;
-            padding: 2rem;
+            
+
+        }
+
+        h1 {
+            text-align: center;
+            background-color: var(--primary-color);
+            padding: 3rem;
+
+            border-top-left-radius: 4rem;
+        }
+
+        textarea {
+            position: relative;
+            left: 22rem;
+            border: 1.5px solid black;
+            box-sizing: border-box;
+            width: 45%;
+            min-height: 20vh;
+            display: block;
+            margin-top: 2rem;
+            font-family: inherit;
+            font-size: large
+        }
+
+        #output {
+            position: relative;
+            left: 22rem;
+            border: 2px solid black;
+            min-height: 10vh;
+            max-height: 10vh;
+            width: 45%;
+            overflow: scroll;
+            font-family: 'Indie Flower', cursive;
+
+
+        }
+
+        button:hover {
+            background-color: var(--primary-color);
+        }
+
+        button {
+            background-color: darkgray;
+            padding: 1rem 2rem;
+            font-family: "kalam", cursive;
+            font-size: 25px;
+            border-radius: .5rem;
+            position: relative;
+            left: 22rem;
+            margin-top: -15px;
+            margin-bottom: 25px;
+        }
+
+        main div {
+            position: relative;
+            left: 22rem;
+        }
+        footer{
+            margin-bottom: 0px;
+            margin-top: 5rem;
+            padding: 1rem 2rem;
+            background-color: var(--primary-color);
+            position: fixed;
+        }
+        footer div{
+            text-align: center;
+            font-size: 2rem;
+        }
+        p{
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
-    <h1>Talk Banana</h1>
-    <textarea id="text-input" placeholder="put your sentence in  english we and will transalate it in banana language ">
-
-    </textarea>
-    <button id="butn-translate">Translator</button>
+    <nav>
+        <div>Banana talk</div>
+    </nav>
+    <main>
+        <textarea id="text-input"
+            placeholder="put your message here which you want to convert it in Banana lanaguage"></textarea><br>
+        <button id="butn-translate">Translate to Banana</button>
+        <div style="font-size: large;">Translation will come hera 👇</div>
+        <div id="output"></div>
+    </main>
+    <footer>
+        <div>about</div>
+        <p>Are you a fan of minions? Did you know that the gibberish they say is an actual language. Use the translator to convert your text from English to Minion speak or Banana language.</p>
+    </footer>
     <script src="app.js"></script>
 
 
+
 </body>
+
 
 </html>
