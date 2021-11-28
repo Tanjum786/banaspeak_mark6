@@ -1,7 +1,7 @@
 var buttentranslator = document.querySelector("#butn-translate");
 var textinput = document.querySelector("#text-input");
 var outputDiv = document.querySelector("#output")
-var serverUrl = "	https://api.funtranslations.com/translate/minion.json"
+var serverUrl = "https://api.funtranslations.com/translate/minion.json"
 
 function getTranslatorUrl(text) {
     return serverUrl + "?" + "text=" + text
