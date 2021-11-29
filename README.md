@@ -1,4 +1,4 @@
-# banaspeek_mark6
+# banaspeak_mark6
 its game of translator of our language to banana  language
  i have created a translator app which translagtes english to 
  banana language 
