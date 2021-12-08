@@ -17,9 +17,7 @@ nav div {
 body {
     font-family: 'Kalam', cursive;
     font-size: large;
-    margin: 0px;
-    position: fixed;
-
+   
 }
 
 h1 {
@@ -31,9 +29,6 @@ h1 {
 }
 
 footer p {
-    display:block;
-    margin-left: 3rem;
-    margin-right: 3rem;
     text-align: center;
     margin-top: 0rem;
     font-size:  1rem;
@@ -41,21 +36,20 @@ footer p {
 }
 
 textarea {
-    position: relative;
-    left: 22rem;
-    border: 1.5px solid black;
+    display: block;
+    margin: auto;
+    border: 1px solid black;
     box-sizing: border-box;
     width: 45%;
-    min-height: 20vh;
-    display: block;
+    min-height: 10vh;
     margin-top: 2rem;
     font-family: inherit;
-    font-size: large
+    font-size: large;
 }
 
 #output {
-    position: relative;
-    left: 22rem;
+    display: block;
+    margin: auto;
     border: 2px solid black;
     min-height: 10vh;
     max-height: 10vh;
@@ -72,20 +66,19 @@ button:hover {
 }
 
 button {
+    cursor: pointer;
     background-color: darkgray;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     font-family: "kalam", cursive;
     font-size: 25px;
     border-radius: .5rem;
-    position: relative;
-    left: 22rem;
-    margin-top: -15px;
-    margin-bottom: 25px;
+    display: block;
+    margin: auto;
 }
 
 main div {
-    position: relative;
-    left: 22rem;
+    display: block;
+    margin: auto;
     font-size: 5px;
 }
 
@@ -98,5 +91,9 @@ footer {
 
 footer div {
     text-align: center;
+    font-size: 2rem;
+}
+.box{
+    text-align:center;
     font-size: 2rem;
 }

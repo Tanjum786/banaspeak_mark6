@@ -21,8 +21,8 @@ function clickEventHandler() {
                 outputDiv.innerText = tarnslatedText
             })
             .catch(errorHandler)
-        };
-    buttentranslator.addEventListener("click", clickEventHandler);
+};
+buttentranslator.addEventListener("click", clickEventHandler);
 
 
 
